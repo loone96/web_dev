@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 색상 및 배경</title>
+    <style>
+        .bgimg {
+            /* 이미지 */
+                background-image: url(https://image.shutterstock.com/image-photo/super-moon-colorful-sky-cloud-600w-1044034966.jpg);
+            /* 가로 폭 */
+                width: 500px;
+            /* 세로 폭 */
+                height: 500px;
+            /* 반복 여부 */
+                background-repeat: no-repeat;
+                /* background-repeat: repeat-x; */
+                /* background-repeat: repeat-y; */
+                /* background-repeat: repeat; */
+        }
+
+        .bgposition {
+            background-color: beige;
+            height: 400px;
+            font-size: 20px;
+            background-image: url(https://cdn2.iconfinder.com/data/icons/animals-nature-2/50/1F986-duck-128.png);
+            background-repeat: no-repeat;
+            background-position: 200px -200px ;
+            /* 가로 left center right */
+            /* 세로 top center bottom */
+        }
+
+        .bgattachment {
+            /* background-image: url(https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/rubber-duck-128.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed; */
+         
+        }
+
+        .bgshorthand {
+            height: 600px;
+            /* background-image: url(https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/rubber-duck-128.png);
+            background-color: skyblue;
+            background-attachment: fixed;
+            background-position: top right;
+            background-repeat: no-repeat; */ 
+            background: url(https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/rubber-duck-128.png) fixed top right no-repeat;
+        }
+
+        .bgsize {
+            height: 240px;
+            background-image: url(https://cdn.pixabay.com/photo/2016/02/19/10/13/nght-sky-1209124_960_720.jpg);
+            /* contain은 모든 이미지가 보일 수 있게
+            가장 짧은 면을 기준으로 사이즈 변경 */
+
+            /* cover는 가장 긴 면을 기준으로 덮어줄 수 있게 설정
+                이미지가 짤릴 수 있음
+             */
+
+            /* px % 등으로 직접 사이즈 지정 가능 */
+        }
+
+        .bggradient {
+            height: 500px;
+                    /* 방향 */
+                    /* 본인이 쓰고 싶은 색깔의 수 - 1 분의 1 씩 % 지정 */
+        }
+
+        .bginsta {
+            height: 500px;
+                    /* xxdeg */
+                    /* 본인이 쓰고 싶은 색깔의 수 - 1 분의 1 씩 % 지정 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>색상</h1>
+    <p style="color: red;">빨간색</p>
+    <p style="color: rgb(255,0,0);">빨간색(rgb)</p>
+    <p style="color: #ff0000;">빨간색(hex)</p>
+    <p style="background-color: #ecdfc8;">1</p>
+    <p style="background-color: #df7861;">2</p>
+    <p style="background-color: #ecb390;">3</p>
+    <p style="background-color: #00a8cc;">4</p>
+    <br><br>
+    <hr>
+    <h1>배경</h1>
+    <h2>배경 색</h2>
+    <div style="background-color: red;">배경색 지정입니다</div>
+    <div style="background-color: rgb(255,0,0);">배경색 지정입니다 (rgb)</div>
+    <h2>배경 이미지</h2>
+    <div class="bgimg">배경이미지입니다</div>
+    <br><br>
+    <h2>배경 포지션</h2>
+    <div class="bgposition">배경 위치 설정</div>
+    <br><br>
+    <h2>배경 고정</h2>
+    <div class="bgattachment">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, quis. Cum tempore recusandae asperiores dolorem illum natus veniam debitis, quaerat inventore corrupti non magnam porro esse. Optio necessitatibus magni saepe.
+        Debitis velit laborum necessitatibus porro provident nobis sint aliquam eos temporibus asperiores. Modi commodi provident inventore, non officiis deleniti sed distinctio sint quasi aperiam sit magnam quae accusamus dignissimos dolore?
+        Sed, minus odit! Repellat architecto, consectetur deleniti ducimus optio suscipit! Nam ullam quod nemo expedita praesentium vitae quasi tempora, quisquam voluptatibus? Similique magnam a maiores, inventore velit asperiores porro aspernatur.
+        Voluptatibus fuga voluptates doloribus architecto nihil quis neque corrupti ab dolore animi, aperiam ea quisquam. Facere sit sed dolor ad consectetur cum, adipisci id explicabo fugit iste officia odio distinctio?
+        Cumque odit blanditiis, sit dolore fugit architecto repellat quibusdam neque numquam, beatae doloremque consequuntur et officiis. Numquam obcaecati voluptates cumque ullam, aspernatur dolores facere officia totam ipsam exercitationem. Fuga, vitae.
+        Fuga autem expedita sint adipisci exercitationem at voluptatem voluptas minus consequuntur neque quae animi deleniti voluptatibus laudantium rerum iusto harum labore blanditiis doloribus quisquam, recusandae dolorem? Tempora dolorem quis laboriosam.
+        Voluptates nihil maxime delectus voluptatibus, nostrum sed nulla illum tenetur suscipit hic mollitia consequuntur, non repudiandae enim, fuga dolorum omnis. Necessitatibus impedit eveniet magnam soluta dicta nam recusandae, perspiciatis a!
+        Voluptas doloribus harum accusantium labore fugiat nesciunt ea adipisci sapiente nulla? Soluta sequi, quos quaerat iste tenetur dignissimos commodi minima. Accusamus magni perspiciatis unde dolorem provident deserunt quasi id quo.
+        Cupiditate nobis et cumque alias libero magnam debitis veritatis corrupti itaque sed nisi aliquam natus perferendis architecto repellat iusto iste, pariatur id ipsa animi nemo repudiandae neque! Minus, eligendi magni!
+        Odit corrupti blanditiis quod adipisci eligendi illo molestiae, quaerat repudiandae? Atque pariatur quam totam, tempora odit soluta perferendis earum consectetur illum non praesentium laudantium. Est culpa quaerat distinctio repudiandae minus.
+        Enim libero deserunt eaque esse, incidunt repellat blanditiis cupiditate magnam praesentium repellendus expedita a iure quibusdam alias ratione at? Eligendi, quo autem! Mollitia aperiam cupiditate cumque facilis possimus sequi aspernatur!
+        Tempore suscipit tempora sit perferendis blanditiis, culpa illum ex cum quasi natus error, quam velit rem aperiam magni explicabo eveniet eum eaque necessitatibus ducimus perspiciatis! Vero veniam quos eligendi doloribus.
+        Saepe sint perferendis obcaecati rem vitae suscipit delectus repudiandae perspiciatis porro quia, quod reprehenderit eligendi sequi nisi asperiores, iusto fugiat ipsam odit nulla cupiditate neque ducimus soluta! Magnam, provident totam.
+        Inventore rerum omnis eum minima expedita repudiandae nihil fugiat assumenda eaque illo, at repellendus aut veniam, laudantium libero soluta explicabo, distinctio quis nesciunt nisi voluptates temporibus! Similique labore non quos.
+        Mollitia odio rerum a deleniti fugit illo velit, libero praesentium asperiores enim provident dolor maiores aut facere blanditiis labore animi! Expedita, sed. Ipsum qui odio natus aliquam. Libero, dolorem itaque!
+        Itaque natus praesentium ea facilis debitis atque nobis ex dolores architecto? Id qui optio in ut dolor molestias minus quis maxime aliquam beatae eius, assumenda aspernatur sequi, accusamus laborum consequuntur.
+        Reprehenderit recusandae quis tenetur eligendi voluptatum magnam quibusdam, cupiditate cum quidem corrupti ex vero eveniet dignissimos minus corporis repudiandae minima itaque sunt? Quisquam numquam aspernatur reprehenderit deleniti consequuntur fugiat velit.
+        Sunt quis illo, aliquid, eius veniam nostrum asperiores fuga deleniti blanditiis eum libero quidem ut! Temporibus, commodi ipsa inventore modi illum laborum, minima neque consequatur magni, saepe quis dolores doloribus?
+        Tempore, commodi, fugit corrupti nesciunt ipsa quo sunt esse quas maiores nemo, rem sit dolore vitae beatae veniam deserunt enim dignissimos veritatis quisquam. Vero beatae praesentium sapiente inventore voluptate quo.
+        Numquam facilis reiciendis, ipsum quasi ipsa cumque? Possimus dolores ducimus dolor consequatur non id molestias sapiente debitis, illum voluptatem. Maiores sit omnis iure? Laudantium in molestias ullam doloremque illo cupiditate?
+    </div>
+    <h2>배경 축약</h2>
+    <div class="bgshorthand">
+        축약 버전 입니다!
+    </div>
+    <br><br>
+    <br><br>
+    <h2>배경 사이즈</h2>
+    <div class="bgsize">
+        배경 크기를 설정하겠습니다
+    </div>
+    <br>
+    <br>
+    <h2>배경 그라디언트</h2>
+    <div class="bggradient">인스타그램처럼!!</div>
+    <br>
+    <div class="bginsta">진짜 인스타그램처럼!!!</div>
+    <br>
+    <br>
+</body>
+
+</html>
