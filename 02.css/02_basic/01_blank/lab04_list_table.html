@@ -7,26 +7,33 @@
     <title>CSS 리스트와 테이블</title>
     <style>
         ul {
-            background-color: ;
+            background-color: hotpink;
+            /* list-style-type: decimal; */
+            list-style-image: url(https://cdn0.iconfinder.com/data/icons/iconsweets2/40/whale.png);
         }
         .inside {
-
+            list-style-position: outside;
         }
         ol {
-
+            /* list-style-type: lower-alpha; */
+            list-style-type: disc;
         }
         .shortHand {
-
+            list-style: circle inside url(https://cdn0.iconfinder.com/data/icons/iconsweets2/40/whale.png);
         }
-        table, td {
-
+        table, td{
+            border: 1px solid;
         }
         table {
-
+            border-collapse: collapse;
         }
         td {
+            width: 90px;
+            height: 90px;
         }
         .bottom {
+            vertical-align: top;
+            text-align: center;
 
         }
     </style>
@@ -40,6 +47,7 @@
         <li>세번째</li>
     </ul>
     <ul class="inside">
+        <li>첫번째</li>
         <li>첫번째</li>
         <li>두번째</li>
         <li>세번째</li>
