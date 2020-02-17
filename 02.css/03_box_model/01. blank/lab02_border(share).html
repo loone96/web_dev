@@ -10,35 +10,62 @@
     <style>
         /* 스타일 */
         .dotted {
+            border-style: dotted;
             /* 일반적인 점선 */
         }
 
         .dashed {
+            border-style: dashed;
             /* 좀 더 긴 점선 */
         }
 
         .double {
+            border-style: double;
             /* 두 줄 점선 */
         }
 
         /* 두께 */
-        .borderWidth {}
+        .borderWidth {
+            border-width: 8px;
+        }
 
-        .borderWidth2 {}
+        .borderWidth2 {
+            border-top-width: 8px;
+            border-bottom-width: 16px;
+        }
 
         /* 색상 */
-        .borderColor {}
+        .borderColor {
+            border-color: black;
+        }
 
-        .borderColor2 {}
+        .borderColor2 {
+            border-top-color: black;
+            border-right-color: red;
+            border-bottom-color: blue;
+            border-left-color: green;
+
+        }
 
         /* 방향별 설정 */
-        .direction {}
+        .direction {
+            border-top: 5px solid black;
+            border-right: 10px solid red;
+            border-left: 20px solid green;
+            border-bottom: 15px solid blue;
+        }
 
-        .four {}
+        .four {
+            border-style: solid dotted dashed double;
+        }
 
-        .three {}
+        .three {
+            border-color: black red blue;
+        }
 
-        .two {}
+        .two {
+            border-color: black red;
+        }
 
         p {
             width: 200px;
@@ -50,17 +77,29 @@
         /* 축약 표현법 */
         /* 테두리의 축약 표현시에는 반드시
         border-style 속성이 먼저 설정되어 있어야 제대로 표현 */
-        .good {}
+        .good {
+            border: 1px solid black;
+        }
 
-        .wrong {}
+        .wrong {
+            border: solid red;
+        }
 
         /* radius 적용 */
         /* border-radius를 적용할 경우, 해당 요소의 이미지, 배경 관련 요소들이 모두 잘려서 표현 */
-        p.round1 {}
+        p.round1 {
+            border-color: black;
+            border-radius: 50px;
+        }
 
-        p.round2 {}
+        p.round2 {
+            border-radius: 40%;
 
-        p.circle {}
+        }
+
+        p.circle {
+            border-radius: 50%;
+        }
     </style>
 </head>
 
@@ -139,6 +178,14 @@
     <p class="round2">%로 지정</p>
     <p class="circle">완전 원형</p>
     <br><br>
+    <div>a</div><br>
+    <div>a</div><br>
+    <div>a</div><br>
+    <div>a</div><br>
+    <div>a</div><br>
+    <div>a</div><br>
+    <div>a</div><br>
+    <div>a</div><br>
 </body>
 
 </html>

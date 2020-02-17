@@ -15,24 +15,32 @@
 
         /* Margin */
         p.individual {
+            border: 1px solid black;
+            margin: 15px;
             /* 배경색의 영향 받지 않음 */
         }
 
         p.shorthand {
+            border: 1px solid black;
+            margin: 80px 40px 20px 10px;
             /* 적용 방식은 border와 동일 */
         }
 
         p.auto {
+            width: 50%;
+            margin: auto;
             /* margin: auto : 좌-우를 동일하게 주겠다는 의미 (위 아래는 적용 X) */
         }
 
         /* Padding */
-        div.individual {}
-
-        div.shorthand {
-            /* 적용 방식은 border와 동일 */
+        div.individual {
+        padding: 20px;        
         }
 
+        div.shorthand {
+            padding: 10px 15px 20px 25px;
+            /* 적용 방식은 border와 동일 */
+        }
         /* Border-box */
         div.test {
             width: 200px;
@@ -41,8 +49,8 @@
             border: 2px solid black;
             padding: 10px;
         }
-
         div.borderBox {
+            box-sizing: border-box;
             /* border-box : 마진을 제외한 박스 모델 전체를 width, height 프로퍼티의 대상 영역으로 지정 (직관적 사용)*/
         }
     </style>
