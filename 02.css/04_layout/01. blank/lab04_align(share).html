@@ -16,12 +16,12 @@
         div.table {
             height: 100px;
             background-color: lavender;
-
+            display: table;
             margin: auto;
         }
 
         div.table>div {
-
+            display: table-cell;
             vertical-align: middle;
         }
 
@@ -35,8 +35,11 @@
         .center div {
             background-color: aqua;
             margin: 0;
-            /* 
-            -ms-transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             */
         }
@@ -60,6 +63,7 @@
     <div class="center">
         <div>수평 및 수직 정렬 되었습니다</div>
     </div>
+
 </body>
 
 </html>
