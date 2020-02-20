@@ -7,20 +7,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Hello, world!</title>
-    <style>
-        body{
-            background-color: black;
-        }
-    </style>
 </head>
 <body >
     <!-- 기본 navbar -->
     <!-- navbar-dark로 하면 글씨체가 흰색, light로 하면 검은색 -->
-    <nav class="mb-4 navbar-dark">
+    <nav class="navbar bg-dark fixed-top navbar-dark navbar-expand-md mb-4 ">
     <!-- 상단 고정 navbar -->
     <!-- fixed-top 상단 고정 / fixed-bottom 하단 고정 -->
         <!-- navbar -->
-        <a class="" href="#">
+        <a class="navbar-brand" href="#">
             <img src="https://image.flaticon.com/icons/svg/187/187134.svg" width="40px" alt="웃는 얼굴"> 상단 메뉴바
         </a>
         <!-- 가로 768px (md) 미만일 경우 메뉴 내용이 없어지고 햄버거 버튼 속으로 들어감 -->
@@ -31,16 +26,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="">
-                    <a class="" href="#">Home</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                 </li>
-                <li class="">
-                    <a class="" href="#">Link</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
                 </li>
             </ul>
             <!-- 검색 버튼 -->
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <form class="form-inline mt-2 mt-md-0" action="https://search.naver.com/search.naver">
+                <input class="form-control mr-sm-2" name="query" type="text" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
