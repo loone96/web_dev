@@ -7,7 +7,8 @@
     <title>JavaScript</title>
     <script>
         // HTML 내부 script 태그 : head
-
+        console.log("hello world");
+        document.getElementById('head').innerHTML= 'Hello World';
     </script>
     <!-- 외부 script 파일 : head -->
 
@@ -19,9 +20,11 @@
     <div id="file">file</div>
     <script>
     // HTML 내부 script 태그 : body
-
+        document.getElementById('head').innerHTML= 'Hello World';
+        document.getElementById('body').innerHTML= 'asdfasdfasdfffas';
+        document.getElementById('body').style.backgroundColor = "blue";
     </script>
     <!-- 외부 script 파일 : body -->
-
+    <script src="myscript.js"></script>
 </body>
 </html>
